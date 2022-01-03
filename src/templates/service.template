@@ -1,0 +1,18 @@
+import { TestBed } from '@angular/core/testing';
+import { {entityName}Service } from './{urlName}.service';
+
+describe('{entityName}Service', () => {
+  let service: {entityName}Service;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [{entityName}Service],
+    });
+
+    service = TestBed.inject({entityName}Service);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});

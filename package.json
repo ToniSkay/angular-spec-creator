@@ -1,0 +1,28 @@
+{
+  "name": "angular-spec-creator",
+  "version": "1.0.0",
+  "description": "Create angular spec files based on file tree and directory",
+  "author": "Toni Skay",
+  "main": " ./index.js",
+  "bin": {
+    "angular-spec-creator": "./index.js"
+  },
+  "scripts": {
+    "add-tempalates": "cp -R src/templates angular-spec-creator",
+    "add-package.json": "cp -R package.json angular-spec-creator",
+    "build": "tsc -p tsconfig.prod.json && npm run add-tempalates && npm run add-package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ToniSkay/angular-spec-creator"
+  },
+  "dependencies": {
+    "chalk": "2.4.2",
+    "string-template": "1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "@types/node": "11.10.4",
+    "typescript": "4.3.5"
+  }
+}
