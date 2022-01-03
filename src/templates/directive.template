@@ -1,0 +1,13 @@
+import { {entityName}Directive } from './{urlName}.directive';
+
+describe('{entityName}Directive', () => {
+  let directive: {entityName}Directive;
+
+   beforeEach(() => {
+     directive = new {entityName}Directive();
+   });
+
+  it('should be created', () => {
+    expect(directive).toBeTruthy();
+  });
+});

@@ -1,0 +1,19 @@
+import { TestBed } from '@angular/core/testing';
+import { {entityName}Guard } from './{urlName}.guard';
+
+describe('{entityName}Guard', () => {
+  let guard: {entityName}Guard;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [{entityName}Guard],
+    });
+
+    guard = TestBed.inject({entityName}Guard);
+  });
+
+  it('should be created', () => {
+    expect(guard).toBeTruthy();
+  });
+});
+
