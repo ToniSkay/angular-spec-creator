@@ -1,6 +1,6 @@
 {
   "name": "angular-spec-creator",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "Create angular spec files based on file tree and directory",
   "author": "Toni Skay",
   "bin": {
