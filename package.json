@@ -1,14 +1,14 @@
 {
   "name": "angular-spec-creator",
-  "version": "1.4.0",
+  "version": "1.7.0",
   "description": "Create angular spec files based on file tree and directory",
   "author": "Toni Skay",
   "bin": {
     "angular-spec-creator": "./index.js"
   },
   "scripts": {
-    "add-tempalates": "cp -R src/templates angular-spec-creator",
-    "add-package.json": "cp -R package.json angular-spec-creator",
+    "add-tempalates": "cp -R src/templates dist",
+    "add-package.json": "cp -R package.json dist",
     "build": "tsc -p tsconfig.prod.json && npm run add-tempalates && npm run add-package.json"
   },
   "repository": {
