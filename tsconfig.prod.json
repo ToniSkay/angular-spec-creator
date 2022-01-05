@@ -1,17 +1,18 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
         "moduleResolution": "node",
         "sourceMap": false,
         "declaration": false,
-        "outDir": "angular-spec-creator",
+        "outDir": "dist",
         "typeRoots": [
             "node_modules/@types"
         ]
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "README.md"
     ],
     "exclude": []
 }
